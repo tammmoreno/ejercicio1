@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head><meta name='robots' content='none' /><base href="https://n203.network-auth.com/Centro/hi/97EEgcld/" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title> Centro</title>
+
+  <style type="text/css" media="screen">
+    html { font-size: 100%;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+form { margin: 0; }
+label { cursor: pointer; }
+button, input {
+  -webkit-appearance:none;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+  line-height: normal;
+  *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+a, a:visited, a:active {color: #fff; text-decoration: none;}
+
+.hidden { display: none; }
+
+body {
+  margin: 0;
+  background: #eee;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-family: georgia, palatino, serif;
+}
+
+h1, h2,  h3, p, a {
+  font-family: CiscoSans, helvetica, helvetica neue, verdana, tahoma, sans-serif;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 35px;
+  color: #555;
+  margin: 0 0 1em;
+}
+h2 {
+  font-size: 14px;
+  font-weight: normal;
+}
+h3 {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #888;
+}
+p{
+  color: #555;
+}
+
+.header {
+  border-bottom: 1px solid #ddd;
+  padding: 2em 0;
+  margin: 0 0 2em 0;
+}
+
+.header table { width: 100%; }
+#title_cell { vertical-align: bottom; }
+#icon_cell { text-align: center; }
+#icon_cell img {
+  max-width:150px;
+  max-height: 100px;
+}
+
+#container {
+  max-width: 900px;
+  min-width: 300px;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+}
+
+#content {
+  background: #fff;
+}
+
+#continue {
+  padding: 2em;
+}
+
+#blocked {
+  padding: 2em;
+}
+
+#auth {
+  box-sizing: border-box;
+  padding: 0 1.5em 2em;
+}
+
+#left_col {
+  width: 100%;
+  margin-bottom: 3em;
+  text-align: left;
+}
+
+#right_col {
+  width: 100%;
+  text-align: left;
+  margin-top: 4em;
+  margin: 0 auto;
+}
+
+#account a {
+  color: #1795E6;
+  margin-right:  1em;
+  padding-right: 1em;
+  border-right: 1px solid #ccc;
+}
+
+#account a:hover {
+  color: #0876BD;
+}
+
+#account a:last-child {
+  border: none;
+}
+
+#sign_in {
+  background: #777777;
+  color: #ffffff;
+  border-radius: 2px;
+  margin: 2.5em 0 1em;
+  padding: 1em;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+#sign_in:hover {
+  opacity: .85;
+}
+
+#blocked_msg {
+  text-align: center;
+  padding: 15px 0;
+}
+
+#claim_ap_msg {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.formarea h3 {
+  line-height: 0;
+}
+
+.formarea input {
+  background: #eee;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding: .7em;
+  width: 100%;
+}
+
+#email_field {
+  margin-bottom: 1.5em;
+}
+
+.button {
+  color: #ffffff;
+  background: #777777;
+  padding: 1em 2em;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.button:hover {
+  opacity: .85;
+}
+
+#forgot_password, .form_links:not(.hidden) {
+  display: inline;
+}
+
+#signin_form .form_links {
+  float: right;
+}
+
+#forgot_password a,
+.form_links a {
+  font-size:  12px;
+  color: #1795E6;
+}
+
+#forgot_password a:hover,
+.form_links a:hover {
+  color: #0876BD;
+}
+
+#create_account_form h3 {
+  margin-top: 3em;
+}
+
+.footer {
+  width: 100%;
+  background: #eee;
+  border-top: 1px solid #ddd;
+  padding: 2em 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer img {
+  margin: .5em 0;
+}
+
+.error {
+  background: #eee;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  margin: 3em 3em 0;
+  box-sizing: border-box;
+  padding: 0 .5em;
+}
+
+.error p {
+  color: #999;
+  font-size: 12px;
+}
+
+.login-error {
+  background: #ffdddd;
+  border-radius: 2px;
+  border: 1px solid #ffb8b8;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.login-error p {
+  color: #ff5959;
+  font-size: 12px;
+}
+
+.login-error img {
+  width: 11px;
+  margin: 5px 7px 0 0;
+}
+
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+.formarea input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 0px red; -webkit-box-shadow: 0px 0px 0px red; box-shadow: 0px 0px 0px red; }
+.formarea label.invalid {border: none; color: red; min-height: inherit; padding: 5px 0 0; margin: 0;}
+
+@media (min-width: 370px) {
+  #auth {
+    padding: 3em 3em 5em;
+  }
+  #left_col {
+    text-align: center;
+  }
+}
+
+@media (min-width: 550px) {
+  #auth {
+    padding: 3em 3em 5em;
+  }
+  #left_col {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 3em;
+    text-align: center;
+  }
+  #right_col {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 730px) {
+  #auth {
+    display: inline-block;
+    padding: 3em 3em 5em;
+  }
+  #left_col {
+    float: left;
+    text-align: left;
+    width: 50%;
+    padding-right: 3em;
+    box-sizing: border-box;
+  }
+  #right_col {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding-left: 3em;
+    box-sizing: border-box;
+  }
+}
+
+  </style>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <div id="content">
+    <div id="container">
+      <div class="header">
+        <div id="icon_cell"><img src='data:image/png;base64,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
+TkSuQmCC
+' /></div>
+      </div>
+
+      <div id="continue">
+        <h1> Centro</h1>
+        <p>- Ingresa tu nombre de usuario (tunombre@centro.edu.mx) y contraseña. Para soporte técnico contacta al departamento de Medios y Tecnólogia al correo myt@centro.edu.mx.</p>
+        <div id="oauth_buttons"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <h3>POWERED BY</h3>
+      <img alt="Cisco Meraki" src="/images/cisco-meraki-gray.png?1562571945" width="100" />
+    </div>
+  </div>
+      <script type="text/javascript" charset="utf-8">
+        
+        function make_button(json) {
+          var link = document.createElement('a');
+          link.setAttribute('class', 'btn');
+          link.setAttribute('href', 'javascript:continue_url_from_header(\'' + json.link + '\')');
+          var img = document.createElement('img');
+          img.setAttribute('src', json.img);
+          img.setAttribute('width', '200px');
+          link.appendChild(img);
+          return link;
+        };
+
+        function continue_url_from_header(url) {
+          var _request = new XMLHttpRequest();
+          _request.open('HEAD', window.location, true);
+          _request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+          _request.onreadystatechange = function() {
+            if (_request.readyState === 4) {
+              var encrypted_state = _request.getResponseHeader('Continue-Url');
+              if (!encrypted_state || encrypted_state === "") {
+                throw new Error("Failed to retrieve Continue-Url from server.");
+              }
+              window.location.href = url.replace('STATE_PLACEHOLDER', encrypted_state);
+            }
+          }
+          _request.send(null);
+        }
+
+        function append_to_table(element, table) {
+          var row = document.createElement('tr');
+          var cell = document.createElement('td');
+          cell.appendChild(element);
+          row.appendChild(cell);
+          table.appendChild(row);
+        };
+
+        window.oauth_button_json = [{"link":"https://accounts.google.com/o/oauth2/auth?scope=email%20profile&response_type=code&access_type=offline&client_id=268757299911-1m56qfkt8ii85o3nfkop7k6q0ftjja20.apps.googleusercontent.com&redirect_uri=https://master.meraki.com/public/oauth_callback&state=googleSTATE_PLACEHOLDER","img":"/images/oauth_google_sign_on.png"}];
+        var container = document.getElementById('oauth_buttons');
+        var table = document.createElement('table');
+        table.setAttribute('style', 'margin:auto;');
+        container.appendChild(table);
+        oauth_button_json.forEach(function(json) {
+          var button = make_button(json);
+          append_to_table(button, table);
+        });
+      </script>
+
+      <script type="text/javascript" charset="utf-8">
+        
+              function update_form_action_from_headers(form) {
+        var _request = new XMLHttpRequest();
+        var url = 'https://n203.network-auth.com/Centro/hi/97EEgcld/login?continue_url=CONTINUE_URL_PLACEHOLDER';
+        _request.open('HEAD', window.location, true);
+        _request.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        _request.onreadystatechange = function() {
+          if (_request.readyState === 4) {
+            var continue_url = _request.getResponseHeader('Continue-Url');
+            form.action = url.replace('CONTINUE_URL_PLACEHOLDER', continue_url);
+            form.submit();
+          }
+        }
+        _request.send(null);
+        return false;
+      }
+
+        
+      </script>
+
+</body>
+</html>
