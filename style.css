@@ -4,7 +4,7 @@ html{
 	font-family: sans-script;
 }
 body{
-	background: url(background.jpg) no-repeat center center fixed;
+	background: url(designer.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 #main{/*selector de id*/
@@ -12,7 +12,7 @@ body{
 	height: 100%;
 	margin: 0 auto;
 	padding: 12px;
-	background: rgba(100,50,80);/* red, green, blue, alpha*/
+	background: rgba(100,50,80,0.3);/* red, green, blue, alpha*/
 }
 h1{
 	color: #FFC0CB;/*hex color, adobe color*/
@@ -30,16 +30,8 @@ img{
 .tagline {
 
 }
-}
-.article1{
-	width: 33%;
-	display: inline-block;
-}
-.article2{
-	width: 33%;
-	display: inline-block;
-}
-.article3{
+
+.article{
 	width: 33%;
 	display: inline-block;
 }
