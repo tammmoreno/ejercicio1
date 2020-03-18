@@ -7,28 +7,41 @@ body{
 	background: url(background.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
-#main{
+#main{/*selector de id*/
 	width: 90%;
-	height: 1200px;
+	height: 100%;
 	margin: 0 auto;
 	padding: 12px;
-	background: rgba(100,50,80);
+	background: rgba(100,50,80);/* red, green, blue, alpha*/
 }
 h1{
-	color: #FFC0CB;
+	color: #FFC0CB;/*hex color, adobe color*/
+	text-transform: uppercase;
+	font-size: 64px;
 }
 p{
 	color: #3743FF;
+	font-size: 32px;
 }
 img{
 	width: 100%;
 	max-width: 100%;
 }
+.tagline {
+
+}
+}
 .article1{
+	width: 33%;
+	display: inline-block;
 }
 .article2{
+	width: 33%;
+	display: inline-block;
 }
 .article3{
+	width: 33%;
+	display: inline-block;
 }
 section{
 }
