@@ -1,7 +1,7 @@
 html{
 	margin: 0;
 	padding: 0;
-	font-family: font-family: 'Abril Fatface', cursive;;
+	font-family: font-family: 'Abril Fatface', cursive;
 }
 body{
 	background: url(designer.jpg) no-repeat center center fixed;
@@ -15,18 +15,18 @@ body{
 	background: rgba(100,50,80,0.3);/* red, green, blue, alpha*/
 }
 h1{
-	color: #B22222;/*hex color, adobe color*/
+	color: #FA8FD0/*hex color, adobe color*/
 	text-transform: uppercase;
 	font-size: 64px;
 }
 
 h2{
-    color: #F08080/*hex color, adobe color*/
+    color: #F3129B/*hex color, adobe color*/
 	text-transform: lowercase;
 	font-size: 32px;
 }
 p{
-	color: #3743FF;
+	color: #78084C;
 	font-size: 32px;
 }
 img{
