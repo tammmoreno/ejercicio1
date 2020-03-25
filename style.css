@@ -15,13 +15,13 @@ body{
 	background: rgba(100,50,80,0.3);/* red, green, blue, alpha*/
 }
 h1{
-	color: #FA8FD0/*hex color, adobe color*/
+	color: teal; /*hex color, adobe color*/
 	text-transform: uppercase;
 	font-size: 64px;
 }
 
 h2{
-    color: #F3129B/*hex color, adobe color*/
+    color: #F3129B;/*hex color, adobe color*/
 	text-transform: lowercase;
 	font-size: 32px;
 }
@@ -32,6 +32,7 @@ p{
 img{
 	width: 100%;
 	max-width: 100%;
+	border-radius: 50%;
 }
 .tagline {
 
