@@ -22,7 +22,7 @@ h1{
 
 h2{
     color: #F3129B;/*hex color, adobe color*/
-	text-transform: lowercase;
+	text-transform: uppercase;
 	font-size: 32px;
 }
 p{
